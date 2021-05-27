@@ -3,6 +3,7 @@
     <div class="container">
       <!-- toggle-form event listener -->
       <Header
+        :isMobile="isMobile"
         @toggle-form="toggleForm"
         :showForm="showForm"
         title="Task Tracker"
@@ -29,6 +30,7 @@ export default {
   data() {
     return {
       showForm: false,
+      isMobile: window.innerWidth <= 880, // for responsiveness
     };
   },
 
