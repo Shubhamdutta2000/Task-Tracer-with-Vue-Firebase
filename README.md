@@ -2,11 +2,13 @@
 
 > Created with Vue as Frontend and Firebase as Backend
 
-- Look Without Form
-  ![screenshot](https://github.com/Shubhamdutta2000/Task-Tracer-with-Vue-Firebase/blob/main/screenshots/lookWithoutForm.PNG)
+## Look Without Form
 
-- Look With Form
-  ![screenshot](https://github.com/Shubhamdutta2000/Task-Tracer-with-Vue-Firebase/blob/main/screenshots/lookWithForm.PNG)
+![screenshot](https://github.com/Shubhamdutta2000/Task-Tracer-with-Vue-Firebase/blob/main/screenshots/lookWithoutForm.PNG)
+
+## Look With Form
+
+![screenshot](https://github.com/Shubhamdutta2000/Task-Tracer-with-Vue-Firebase/blob/main/screenshots/lookWithForm.PNG)
 
 ## Features
 

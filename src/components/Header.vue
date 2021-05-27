@@ -1,10 +1,16 @@
 <template>
   <header>
-    <h1>{{ title }}</h1>
+    <!-- Responsiveness for different devices -->
+    <div v-if="!isMobile">
+      <h1>{{ title }}</h1>
+    </div>
+    <div v-else>
+      <h2>{{ title }}</h2>
+    </div>
     <!-- 
       Use btn-click event listener &
       Emit toggle-form event for adding new task
-     if current route is in home route then only show this Button
+      if current route is in home route then only show this Button
     -->
     <Button
       v-show="homePage"
@@ -23,6 +29,7 @@ export default {
   props: {
     title: String,
     showForm: Boolean,
+    isMobile: String,
   },
   components: {
     Button,
