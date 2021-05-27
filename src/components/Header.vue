@@ -10,7 +10,7 @@
       v-show="homePage"
       @btn-click="$emit('toggle-form')"
       :text="showForm ? 'Hide Form' : 'Show Form'"
-      :color="showForm ? 'red' : 'green'"
+      :color="showForm ? '#ff1d1d ' : '#0078d7'"
     />
   </header>
 </template>
@@ -48,5 +48,6 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  color: #fff;
 }
 </style>

@@ -1,14 +1,17 @@
 <template>
-  <div class="container">
-    <!-- toggle-form event listener -->
-    <Header
-      @toggle-form="toggleForm"
-      :showForm="showForm"
-      title="Task Tracer"
-    />
-    <!-- Pass showForm props to router view component (needed in Home route) -->
-    <router-view :showForm="showForm"> </router-view>
-    <Footer />
+  <div>
+    <div class="container">
+      <!-- toggle-form event listener -->
+      <Header
+        @toggle-form="toggleForm"
+        :showForm="showForm"
+        title="Task Tracker"
+      />
+      <!-- Pass showForm props to router view component (needed in Home route) -->
+      <router-view :showForm="showForm"> </router-view>
+      <Footer />
+    </div>
+    <p class="footer-credit">Made with 💙 by Shubham Dutta</p>
   </div>
 </template>
 
@@ -46,16 +49,21 @@ export default {
   padding: 0;
 }
 body {
+  color: #fff;
   font-family: "Poppins", sans-serif;
+  background: #333;
 }
 .container {
+  position: relative;
   max-width: 600px;
   margin: 50px auto;
   overflow: auto;
   min-height: 400px;
-  border: 1px solid steelblue;
+  border: 3px solid rgb(255, 255, 255);
   padding: 30px;
   border-radius: 5px;
+  box-shadow: 50px 10px 50px 10px rgba(73, 73, 73, 0.1),
+    -30px 0px 40px rgba(88, 86, 86, 0.15);
 }
 .btn {
   display: inline-block;
@@ -79,5 +87,11 @@ body {
 .btn-block {
   display: block;
   width: 100%;
+}
+.footer-credit {
+  margin-bottom: 200px;
+  position: absolute;
+  left: 42%;
+  color: #fff;
 }
 </style>

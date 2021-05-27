@@ -7,10 +7,12 @@
     @dblclick="$emit('reminder-toggle', task.id)"
     :class="[task.reminder ? 'reminder' : '', 'task']"
   >
-    <h3>{{ task.text }}</h3>
-    <!-- emit delete task custom event -->
+    <div class="content">
+      <h3>{{ task.text }}</h3>
+      <!-- emit delete task custom event -->
+      <p>{{ task.day }}</p>
+    </div>
     <i @click="$emit('delete-task', task.id)" class="fas fa-trash-alt"></i>
-    <p>{{ task.day }}</p>
   </div>
 </template>
 
@@ -26,21 +28,29 @@ export default {
 <style scope>
 .fas {
   color: red;
-  float: right;
+  width: 6%;
 }
 .task {
   background: #f4f4f4;
   margin: 5px;
-  padding: 10px 20px;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
+.task .content {
+  width: 94%;
+}
 .task.reminder {
-  border-left: 5px solid green;
+  border-left: 10px solid #0078d7;
 }
 .task h3 {
   color: rgb(0, 0, 177);
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.task p {
+  color: #005eac;
 }
 </style>
