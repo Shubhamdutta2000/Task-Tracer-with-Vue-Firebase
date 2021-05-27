@@ -1,4 +1,5 @@
-# task-tracer-vue
+# Task-tracer-App
+> Created with Vue as Frontend and Firebase as Backend
 
 ## Project setup
 ```
