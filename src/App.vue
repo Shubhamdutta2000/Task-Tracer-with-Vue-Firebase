@@ -90,8 +90,7 @@ body {
 }
 .footer-credit {
   margin-bottom: 200px;
-  position: absolute;
-  left: 42%;
+  text-align: center;
   color: #fff;
 }
 </style>
