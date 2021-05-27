@@ -2,6 +2,20 @@
 
 > Created with Vue as Frontend and Firebase as Backend
 
+- Look Without Form
+  ![screenshot](https://github.com/Shubhamdutta2000/secureVault/blob/main/screenshots/lookWithoutForm.PNG)
+
+- Look With Form
+  ![screenshot](https://github.com/Shubhamdutta2000/secureVault/blob/main/screenshots/lookWithForm.PNG)
+
+## Features
+
+- View All Task Data
+- Toggle 'Show Form' button for adding new task or hiding the form
+- Add Your New Task with the Form
+- Double Click on the particular Task for setting it as a reminder
+- Delete any task on clicking the delete button
+
 ## Project Demo
 
 > https://task-tracker-ea2f7.web.app/
