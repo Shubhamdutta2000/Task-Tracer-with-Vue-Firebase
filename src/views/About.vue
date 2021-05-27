@@ -15,8 +15,9 @@
 <style scoped>
 span {
   font-size: 18px;
+  color: #fff;
 }
 .btn {
-  background-color: green;
+  background-color: #0078d7;
 }
 </style>

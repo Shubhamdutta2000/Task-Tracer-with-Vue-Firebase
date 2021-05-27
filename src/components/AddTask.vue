@@ -58,7 +58,7 @@ export default {
   margin-bottom: 40px;
 }
 .form-control {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .form-control label {
   display: block;
@@ -66,24 +66,23 @@ export default {
 .form-control input {
   width: 100%;
   height: 40px;
-  margin: 5px;
-  padding: 3px 7px;
+  margin: 2px;
+  padding: 5px 18px;
   font-size: 17px;
 }
 .form-control-check {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 .form-control-check label {
   flex: 1;
 }
 .form-control-check input {
-  flex: 1;
+  flex: 0.1;
   height: 20px;
 }
-
 .btn {
-  background-color: green;
+  background-color: #0078d7;
+  margin-bottom: 60px;
 }
 </style>
