@@ -2,13 +2,13 @@ import firebase from "firebase/app";
 
 // config file
 const firebaseConfig = {
-  apiKey: "AIzaSyAuilkSbRBwrpRudyWOFZQBirrIgxyp-qA",
-  authDomain: "task-tracker-ea2f7.firebaseapp.com",
-  projectId: "task-tracker-ea2f7",
-  storageBucket: "task-tracker-ea2f7.appspot.com",
-  messagingSenderId: "408284746288",
-  appId: "1:408284746288:web:7024edbd3f4df74684d3f5",
-  measurementId: "G-77NDF45KGW",
+  apiKey: process.env.VUE_APP_apiKey,
+  authDomain: process.env.VUE_APP_authDomain,
+  projectId: process.env.VUE_APP_projectId,
+  storageBucket: process.env.VUE_APP_storageBucket,
+  messagingSenderId: process.env.VUE_APP_messagingSenderId,
+  appId: process.env.VUE_APP_appId,
+  measurementId: process.env.VUE_APP_measurementId,
 };
 
 var app = firebase.initializeApp(firebaseConfig);
