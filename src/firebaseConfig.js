@@ -1,14 +1,16 @@
 import firebase from "firebase/app";
 
+console.log(process.env.VUE_APP_FIREBASE_API_ID);
+
 // config file
 const firebaseConfig = {
-  apiKey: process.env.VUE_APP_apiKey,
-  authDomain: process.env.VUE_APP_authDomain,
-  projectId: process.env.VUE_APP_projectId,
-  storageBucket: process.env.VUE_APP_storageBucket,
-  messagingSenderId: process.env.VUE_APP_messagingSenderId,
-  appId: process.env.VUE_APP_appId,
-  measurementId: process.env.VUE_APP_measurementId,
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+  authDomain: process.env.VUE_APP_FIREBASE_DOMAIN,
+  projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.VUE_APP_FIREBASE_API_ID,
+  measurementId: process.env.VUE_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 var app = firebase.initializeApp(firebaseConfig);
